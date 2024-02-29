@@ -1,0 +1,8 @@
+<div class="header">
+  <div *ngIf="loggedUser">
+    <p *ngIf="showLoggedUser()">Welcome, {{ loggedUser.username }}</p>
+  </div>
+  <button class="btn" *ngIf="showLogoutButton()" (click)="onLogout()">
+    Logout
+  </button>
+</div>

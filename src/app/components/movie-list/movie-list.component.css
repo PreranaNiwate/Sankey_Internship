@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bg {
+  min-height: 100vh;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.movie-card {
+  background-color: #333;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: calc(20% - 40px);
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.movie-card h3 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+.card {
+  padding: 40px;
+}
+.btn {
+  width: 100%;
+  margin: 40px 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.background {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.background::before {
+  content: "";
+  background-image: url("src/assets/images/movie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+    width: 90%;
+  }
+  .preview {
+    width: 100%;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

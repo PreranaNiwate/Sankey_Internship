@@ -1,0 +1,19 @@
+<div class="bg">
+  <div class="card-container">
+    <div class="background"></div>
+    <div class="movie-card" *ngFor="let movie of movies?.movies">
+      <div class="preview">
+        <a [routerLink]="['/details', movie.id]" class="btn">
+          <img
+            [src]="'assets/images/' + movie.title + '.jpg'"
+            alt="{{ movie.title }}
+          Image"
+          />
+        </a>
+        <h3>
+          {{ movie.title }}
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>

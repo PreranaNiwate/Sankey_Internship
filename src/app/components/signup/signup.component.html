@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="div-form">
+    <div class="form-box">
+      <form class="login">
+        <h2>SIGN UP</h2>
+        <div class="input-group">
+          <div class="input-field">
+            <input
+              type="text"
+              [(ngModel)]="signupObj.username"
+              placeholder="Username"
+              class="username"
+              name="username"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              [(ngModel)]="signupObj.password"
+              placeholder="Password"
+              class="password"
+              name="password"
+            />
+          </div>
+        </div>
+
+        <br />
+        <button (click)="onRegister()" routerLink="/login">Register</button>
+        Already have an account? <a routerLink="/login">Log In</a>
+      </form>
+    </div>
+  </div>
+</div>
