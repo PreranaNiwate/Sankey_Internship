@@ -1,6 +1,6 @@
 <div class="header">
   <div *ngIf="loggedUser">
-    <p *ngIf="showLoggedUser()">Welcome, {{ loggedUser.username }}</p>
+    <p *ngIf="showLoggedUser()">Hello, {{ loggedUser.username }}</p>
   </div>
   <button class="btn" *ngIf="showLogoutButton()" (click)="onLogout()">
     Logout
